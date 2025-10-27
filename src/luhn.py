@@ -1,4 +1,5 @@
 def luhnСheck(cardNumber):
+    cardNumber = cardNumber.replace(" ", "")
     if not cardNumber.isdigit():
         raise ValueError("Номер карты должен содержать только цифры")
 
